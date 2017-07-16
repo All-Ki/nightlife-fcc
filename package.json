@@ -1,0 +1,22 @@
+{
+  "version": "1.0.1",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Blake Johnston",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "dotenv": "^1.2.0",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "google-places": "0.0.2",
+    "googleplaces": "^0.6.1",
+    "mongoose": "^4.10.6",
+    "mongoose-findorcreate": "^2.0.0",
+    "passport": "^0.3.0",
+    "passport-github": "^1.1.0",
+    "pug": "^2.0.0-rc.2"
+  }
+}

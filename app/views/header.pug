@@ -1,0 +1,25 @@
+doctype html
+
+head
+    title What the fck am i doing with my life
+
+    link(href="/public/css/main.css" rel="stylesheet" type="text/css")
+    link(href="/public/css/mapSearch.css" rel="stylesheet" type="text/css")
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
+  
+//  script(src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom-server.min.js")  
+      
+body
+    header.navbar.fixed-top
+
+      if userName
+          span#user #{userName}      
+      else
+          span#login
+              a(href="/auth/github")
+                  div(class='btn' id="login-btn")
+                      p LOGIN WITH GITHUB
+      input#pac-input.controls(type='text', placeholder='Search Box', onclick="showMap()")
+      button(onclick="search()") Here i am!
