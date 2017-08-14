@@ -56,10 +56,6 @@ res.send("done");
 	} )
 
 	app.get( '/getSearch', ( req, res ) => {
-		console.log( req.session.id );
-
-		console.log( req.session.placeSearch );
-
 		if ( req.session.placeSearch ) {
 			res.json( req.session.placeSearch )
 		} else {
